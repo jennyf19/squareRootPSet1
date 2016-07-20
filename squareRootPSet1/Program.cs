@@ -7,17 +7,9 @@ namespace squareRootPSet1
     {
         static void Main(string[] args)
         {
-            //get number to take square root of = num
-            /* int num;
-             double error = 1;
-             Console.WriteLine("Please give a starting number above 0.");
-             num = Convert.ToInt32(Console.ReadLine());
+            /*SquareRootCalculator myNewSquareRootCalculator = new SquareRootCalculator(error);
+             double answer = myNewSquareRootCalculator.SquareRootCalculator(num);*/
 
-             SquareRootCalculator myNewSquareRootCalculator = new SquareRootCalculator(error);
-             double answer = myNewSquareRootCalculator.SquareRootCalculator(num);
-
-             Console.WriteLine(answer);
-             Console.ReadLine();*/
             double error = 0.0001;
             SquareRootCalculator myNewSquareRootCalculator = new SquareRootCalculator(error);
             StandardMethod myNewStandardMethod = new StandardMethod(error);
@@ -25,7 +17,10 @@ namespace squareRootPSet1
         }
 
         public static bool CatScratcher(ISqrRt brio, ISqrRt stormy, double error)
-        {
+        {   
+            //generate 10000 random numbers from 0-100000
+            //compute squareroot from both classes (brio using heron and stormy using standard)
+            //validate the difference between the two results is under the error rate
             Random random = new Random();
             for (int i = 0; i < 10000; i++)
             {
