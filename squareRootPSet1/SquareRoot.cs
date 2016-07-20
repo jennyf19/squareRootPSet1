@@ -55,7 +55,7 @@ namespace squareRootPSet1
             //if guess * guess is close enough to num, then return guess
             double product = guess * guess;
             double difference = product - num;
-            if (difference <= errorLimit)
+            if (difference < errorLimit)
                 return true;
             else
             {
