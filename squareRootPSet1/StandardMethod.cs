@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace squareRootPSet1
 {
-    class StandardMethod
+    class StandardMethod : ISqrRt
     {
         public double errorLimit;
 
@@ -17,7 +17,7 @@ namespace squareRootPSet1
         }
 
         //method to determine square root:
-        public double CalculateSqRoot(double num)
+        public double SquareRoot(double num)
         {
             if (num <= 0)
             {
